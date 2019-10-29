@@ -27,9 +27,14 @@ public class Java_Swing_Examples {
 		text.setEditable(false);
 		
 		
+		JTextArea text2 = new JTextArea("This text is editable");
+		text2.setBounds(50, 100, 150, 20);
+		
+		
 		//add parameters to the frame indcluding text
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.add(text);
+		frame.add(text2);
 		frame.setSize(250,250);
 		frame.setLayout(null);
 		frame.setVisible(true);
