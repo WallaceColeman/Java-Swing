@@ -10,7 +10,11 @@ public class Java_Swing_Examples {
 	}
 	
 	private static void textExample() {
+		//create the frame (window)
 		JFrame frame = new JFrame("Text Example");
+		
+		
+		//Create the text area to add to the window
 		JTextArea text = new JTextArea("Text in a window");
 		
 		//             X   Y   W    H
@@ -19,7 +23,11 @@ public class Java_Swing_Examples {
 		//Y - Position on the Y axis
 		//W - Width
 		//H - Height
+		
 		text.setEditable(false);
+		
+		
+		//add parameters to the frame indcluding text
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.add(text);
 		frame.setSize(250,250);
